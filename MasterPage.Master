@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ProjectExcercise.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 996px;
+        }
+        .auto-style3 {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="auto-style1">
+        <tr>
+            <td colspan="2"><h1>Welcome to the Biggest Shopping Carnival</h1></td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                &nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3" colspan="2">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Shopping.png" Height="296px" Width="835px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                &nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
